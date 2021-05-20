@@ -14,42 +14,56 @@ body {
 	background-color: var(--clr-light);
 }
 
+/*        Navbar        */
 .navbar {
-	background-image: var(--clr-gradient);
+	position: fixed;
+	background: transparent;
 	color: var(--clr-dark);
 	height: 4.5em;
 	margin-bottom: 20px;
-	display: flex;
+	display: block;
 	width: 100%;
+	transition: all 0.3s ease-in-out;
 }
 
-.navbar img {
-	height: 4em;
-	margin-left: 1.5em;
-	margin-top: 0.8em;
-	margin-right: 2em;
+.navbar.sticky {
+	background: var(--clr-dark);
+	padding: 0.25em 0;
+	box-shadow: 0px 3px 5px 0px rgba(48, 48, 48, 0.1);
 }
 
 .navbar .content {
 	display: flex;
-	align-items: center;
-	justify-content: right;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+.logo img {
+	height: 4em;
+	margin-left: 1.5em;
+	margin-top: 0.5em;
+	margin-right: 2em;
+	display: inline-block;
 }
 
 .navbar .menu-list {
-	display: flex;
+	list-style: none;
+	line-height: 4;
+	margin-right: auto;
 }
 
-.menu-list {
-	list-style: none;
+.list-each {
+	display: inline-block;
 }
 
 .nav-link {
 	font-weight: 600;
 	color: var(--clr-dark);
-	text-decoration: none;
 	padding-right: 30px;
-	text-align: center;
+	text-decoration: none;
 	font-size: 1.2em;
 }
 
@@ -59,8 +73,8 @@ body {
 
 .navbar .icon {
 	padding-right: 0.5em;
-	display: flex;
-	align-self: right;
+	display: inline-block;
+	line-height: 5.15;
 }
 
 .fas {
@@ -68,10 +82,22 @@ body {
 	cursor: pointer;
 }
 
+/*					Main				 */
+.main-container {
+	/* IGOR VAI TIRAR O PADDING TOP E RESOLVER O RESTO DO CODIGO TODIN */
+	padding-top: 5em;
+}
+
+main img {
+	height: 300px;
+}
+
+/*				Footer					 */
 .footer {
 	margin-top: 5em;
 	padding: 3.5em 0;
 	background-color: black;
+	margin: 0;
 }
 
 .fab {
@@ -82,6 +108,7 @@ body {
 	display: flex;
 	justify-content: center;
 	list-style: none;
+	padding-left: 0;
 }
 
 .footer .icon-footer {
