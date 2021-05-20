@@ -17,8 +17,7 @@ body {
 /*        Navbar        */
 .navbar {
 	position: fixed;
-	background: transparent;
-	color: var(--clr-dark);
+	background: linear-gradient(to top, transparent 2%, #212529 135%);
 	height: 4.5em;
 	margin-bottom: 20px;
 	display: block;
@@ -27,9 +26,9 @@ body {
 }
 
 .navbar.sticky {
-	background: var(--clr-dark);
-	padding: 0.25em 0;
-	box-shadow: 0px 3px 5px 0px rgba(48, 48, 48, 0.1);
+	background: linear-gradient(to top, #212529, transparent 250%);
+	padding: 0.04em 0;
+	box-shadow: 0px 2px 7px 0px var(--clr-dark);
 }
 
 .navbar .content {
@@ -47,6 +46,11 @@ body {
 	margin-top: 0.5em;
 	margin-right: 2em;
 	display: inline-block;
+}
+
+.svg {
+	filter: invert(87%) sepia(89%) saturate(4785%) hue-rotate(47deg)
+		brightness(130%) contrast(140%);
 }
 
 .navbar .menu-list {
@@ -85,9 +89,16 @@ body {
 }
 
 /*					Main				 */
-.main-container {
-	/* IGOR VAI TIRAR O PADDING TOP E RESOLVER O RESTO DO CODIGO TODIN */
+
+.carrousel-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding-top: 5em;
+}
+
+.carrousel-list {
+	display: flex;
 }
 
 main img {
