@@ -1,62 +1,62 @@
-const fila = document.querySelector(".contenedor-carousel");
-const peliculas = document.querySelectorAll(".pelicula");
+const fila = document.querySelector(".container-carrousel");
+const filmes = document.querySelectorAll(".movie");
 
-const flechaIzquierda = document.getElementById("flecha-izquierda");
-const flechaDerecha = document.getElementById("flecha-derecha");
+const setaEsquerda = document.getElementById("left-arrow");
+const setaDireita = document.getElementById("right-arrow");
 
-// ? ----- ----- Event Listener para la flecha derecha. ----- -----
-flechaDerecha.addEventListener("click", () => {
+// ? ----- ----- Event Listener para a seta direita. ----- -----
+setaDireita.addEventListener("click", () => {
 	fila.scrollLeft += fila.offsetWidth;
 
-	const indicadorActivo = document.querySelector(".indicadores .activo");
-	if (indicadorActivo.nextSibling) {
-		indicadorActivo.nextSibling.classList.add("activo");
-		indicadorActivo.classList.remove("activo");
+	const IndicatorActive = document.querySelector(".indicators .active");
+	if (IndicatorActive.nextSibling) {
+		IndicatorActive.nextSibling.classList.add("active");
+		IndicatorActive.classList.remove("active");
 	}
 });
 
-// ? ----- ----- Event Listener para la flecha izquierda. ----- -----
-flechaIzquierda.addEventListener("click", () => {
+// ? ----- ----- Event Listener para a seta esquerda. ----- -----
+setaEsquerda.addEventListener("click", () => {
 	fila.scrollLeft -= fila.offsetWidth;
 
-	const indicadorActivo = document.querySelector(".indicadores .activo");
-	if (indicadorActivo.previousSibling) {
-		indicadorActivo.previousSibling.classList.add("activo");
-		indicadorActivo.classList.remove("activo");
+	const IndicatorActive = document.querySelector(".indicators .active");
+	if (IndicatorActive.previousSibling) {
+		IndicatorActive.previousSibling.classList.add("active");
+		IndicatorActive.classList.remove("active");
 	}
 });
 
-// ? ----- ----- Paginacion ----- -----
-const numeroPaginas = Math.ceil(peliculas.length / 5);
-for (let i = 0; i < numeroPaginas; i++) {
-	const indicador = document.createElement("button");
+// ? ----- ----- Paginacão ----- -----
+const numberPages = Math.ceil(filmes.length / 5);
+for (let i = 0; i < numberPages; i++) {
+	const indicator = document.createElement("button");
 
 	if (i === 0) {
-		indicador.classList.add("activo");
+		indicator.classList.add("active");
 	}
 
-	document.querySelector(".indicadores").appendChild(indicador);
-	indicador.addEventListener("click", (e) => {
+	document.querySelector(".indicators").appendChild(indicator);
+	indicator.addEventListener("click", (e) => {
 		fila.scrollLeft = i * fila.offsetWidth;
 
 		document
-			.querySelector(".indicadores .activo")
-			.classList.remove("activo");
-		e.target.classList.add("activo");
+			.querySelector(".indicators .active")
+			.classList.remove("active");
+		e.target.classList.add("active");
 	});
 }
 
 // ? ----- ----- Hover ----- -----
-peliculas.forEach((pelicula) => {
-	pelicula.addEventListener("mouseenter", (e) => {
+filmes.forEach((filme) => {
+	filme.addEventListener("mouseenter", (e) => {
 		const elemento = e.currentTarget;
 		setTimeout(() => {
-			peliculas.forEach((pelicula) => pelicula.classList.remove("hover"));
+			filmes.forEach((filme) => filme.classList.remove("hover"));
 			elemento.classList.add("hover");
 		}, 300);
 	});
 });
 
 fila.addEventListener("mouseleave", () => {
-	peliculas.forEach((pelicula) => pelicula.classList.remove("hover"));
+	filmes.forEach((filme) => filme.classList.remove("hover"));
 });
