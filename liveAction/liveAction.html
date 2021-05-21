@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="../assets/img/favicon-16x16.png"
+			type="image/x-icon"
+		/>
+		<title>Live Action</title>
+		<script
+			src="https://kit.fontawesome.com/8bb6b0374f.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="../estilo.css" />
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+
+	<body>
+		<nav class="navbar">
+			<div class="content">
+				<div class="logo">
+					<a href="../index.html">
+						<img
+							src="../assets/img/LogoSVG.svg"
+							alt="Pinguins logo"
+							class="svg"
+						/>
+					</a>
+				</div>
+				<ul class="menu-list">
+					<li class="list-each">
+						<a
+							href="../index.html"
+							target="_self"
+							class="nav-link"
+							>Início</a
+						>
+					</li>
+					<li class="list-each">
+						<a href="../animacao/animacao.html" target="_self" class="nav-link"
+							>Animação</a
+						>
+					</li>
+					<li class="list-each">
+						<a href="./liveAction.html" target="_self" id="active-page" class="nav-link"
+							>Live Action</a
+						>
+					</li>
+					<li class="list-each">
+						<a href="../sobre/sobre.html" target="_self" class="nav-link"
+							>Sobre</a
+						>
+					</li>
+				</ul>
+				<div class="icon">
+					<form id="busca">
+						<input type="search" />
+						<a href="../doacao/doacao.html">
+							<i class="fas fa-hand-holding-heart fa-2x"></i>
+						</a>
+						<a href="../register/register.html">
+							<i class="fas fa-user fa-2x fa-2x"></i>
+						</a>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<div class="main-movie">
+			<div class="container">
+				<video
+					class="video-destaque"
+					style="
+						position: absolute;
+						top: 30%;
+						left: 50%;
+						width: 100%;
+						max-height: calc(100% - 1px);
+						transform: translate(-50%, -50%);
+						z-index: -1;
+						object-fit: cover;
+					"
+					autoplay
+					loop
+				>
+					<source src="../assets/video/destaqueLiveAction.mp4" type="video/mp4" />
+				</video>
+				<h3 class="title">Penguin Highway</h3>
+				<p class="description">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Temporibus voluptatibus ratione minima, id veniam minus. Sit
+					quibusdam officiis ipsa voluptatibus illum modi explicabo,
+					alias facere numquam voluptas. Ea, esse voluptatem.
+				</p>
+				<button role="button" class="button">
+					<i class="fas fa-play"></i>Reproduzir
+				</button>
+				<button role="button" class="button">
+					<i class="fas fa-info-circle"></i>Mais informações
+				</button>
+			</div>
+		</div>
+
+		<div class="recommended-movies container">
+			<div class="container-title-controls">
+				<h3>Filmes Recomendados</h3>
+				<div class="indicators"></div>
+			</div>
+
+			<div class="container-main">
+				<button role="button" id="left-arrow" class="left-arrow">
+					<i class="seta fas fa-angle-left"></i>
+				</button>
+
+				<div class="container-carrousel">
+					<div class="carrousel">
+						<div class="movie">
+							<a href="https://www.youtube.com/watch?v=L7tWNwhSocE"><img src="../assets/img/documentario1.jpg" alt="" /></a>
+						</div>
+						<div class="movie">
+							<a href="https://www.youtube.com/watch?v=SMsA07Yej7E"><img src="../assets/img/documentario2.jpg" alt="" /></a>
+						</div>
+						<div class="movie">
+							<a href="https://www.youtube.com/watch?v=VubxHFy7ocE"><img src="../assets/img/documentario3.jpg" alt="" /></a>
+						</div>
+						<div class="movie">
+							<a href="https://www.youtube.com/watch?v=vITwH0Y5ra4"><img src="../assets/img/documentario5.jpg" alt="" /></a>
+						</div>
+						<div class="movie">
+							<a href="https://www.youtube.com/watch?v=xYR3mY4CLOM"><img src="../assets/img/documentario6.jpg" alt="" /></a>
+						</div>
+						<div class="movie">
+							<a href=""><img src="../assets/img/documentario7.webp" alt="" /></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="right-arrow" class="right-arrow">
+					<i class="seta fas fa-angle-right"></i>
+				</button>
+			</div>
+		</div>
+		<main></main>
+
+		<footer class="footer">
+			<ul class="social-list">
+				<li>
+					<a
+						class="icon-footer"
+						href="http://facebook.com"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i class="fab fa-facebook fa-2x"></i
+					></a>
+				</li>
+				<li>
+					<a
+						class="icon-footer"
+						href="http://twitter.com"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i class="fab fa-twitter fa-2x"></i
+					></a>
+				</li>
+				<li>
+					<a
+						class="icon-footer"
+						href="http://instagram.com"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i class="fab fa-instagram fa-2x"></i
+					></a>
+				</li>
+			</ul>
+		</footer>
+		<script src="../index.js"></script>
+		<script src="../script.js"></script>
+	</body>
+</html>
