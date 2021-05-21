@@ -66,7 +66,7 @@ body {
 }
 
 .nav-link {
-	font-weight: 600;
+	font-weight: 500;
 	color: var(--clr-dark);
 	padding-right: 30px;
 	text-decoration: none;
@@ -74,9 +74,14 @@ body {
 	color: white;
 }
 
+#active-page{
+	font-weight: 700;
+	font-size: 1.25em;
+}
 .nav-link:hover {
 	font-size: 1.25em;
 }
+
 
 .navbar .icon {
 	display: inline-block;
