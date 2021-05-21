@@ -101,7 +101,7 @@ body {
 /* ---- ----- ----- Container Principal e Seta ----- ----- ----- */
 .recommended-movies {
 	margin-bottom: 70px;
-	width: clamp(50%, 85%, 600px);
+	width: 85%;
 	margin: auto;
 }
 
