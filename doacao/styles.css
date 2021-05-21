@@ -1,0 +1,35 @@
+.black-section {
+	background-color: #212529;
+	color: white;
+	width: 100%;
+	padding: 90px;
+}
+
+#pricing {
+	padding-top: 200px;
+	height: auto;
+}
+
+.card {
+	color: #212529;
+	text-align: center;
+	margin: 10em auto;
+	max-width: 400px;
+	min-width: 250px;
+}
+
+.card-body .card-span {
+	font-weight: 300;
+	color: #212529;
+	font-size: 1em;
+}
+
+.price-text {
+	font-size: 3rem;
+	line-height: 1.5;
+	padding-left: 0.1em;
+}
+
+.pricing-column {
+	padding: 3% 2%;
+}
