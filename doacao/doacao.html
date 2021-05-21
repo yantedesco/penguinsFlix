@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
 			rel="shortcut icon"
-			href="./img/favicon-16x16.png"
+			href="../img/favicon-16x16.png"
 			type="image/x-icon"
 		/>
 		<title>Pinguins Streaming</title>
@@ -21,9 +21,8 @@
 			crossorigin="anonymous"
 		/>
 
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="./styles.css" />
 		<link rel="stylesheet" href="../estilo.css" />
-		<link rel="stylesheet" href="../style.css" />
 	</head>
 
 	<body>
@@ -40,22 +39,22 @@
 				</div>
 				<ul class="menu-list">
 					<li class="list-each">
-						<a href="../index.html" target="_self" class="nav-link"
+						<a href="../index.html" target="_self" class="nav_link"
 							>Início</a
 						>
 					</li>
 					<li class="list-each">
-						<a href="../filmes.html" target="_self" class="nav-link"
+						<a href="../filmes.html" target="_self" class="nav_link"
 							>Filmes</a
 						>
 					</li>
 					<li class="list-each">
-						<a href="../series.html" target="_self" class="nav-link"
+						<a href="../series.html" target="_self" class="nav_link"
 							>Séries</a
 						>
 					</li>
 					<li class="list-each">
-						<a href="../sobre.html" target="_self" class="nav-link"
+						<a href="../sobre.html" target="_self" class="nav_link"
 							>Sobre</a
 						>
 					</li>
@@ -77,18 +76,19 @@
 
 		<main>
 			<section class="black-section" id="pricing">
-				<h2 class="section-heading">
-					Mantenha nossos pinguins aquecidos e tenha acesso a todo
-					nosso catálogo
-				</h2>
-				<p>Planos simples e acessíveis pra você e seu cachorro.</p>
+				<div class="heading-text">
+					<h2 class="section-heading">
+						Mantenha nossos pinguins aquecidos e tenha acesso a todo
+						nosso catálogo
+					</h2>
+					<p>Planos simples e acessíveis para você e o seu bolso.</p>
+				</div>
 
 				<div class="row">
 					<div class="pricing-column col-lg-4 col-md-6">
 						<div class="card">
-							<div class="card-header">
-								<h3>Pinguim de Regata</h3>
-							</div>
+							<img src="../img/hot-penguin.jpg" alt="pinguim de terno" class="card-img-top">
+
 							<div class="card-body">
 								<span class="card-span">R$</span>
 								<span class="price-text">9,99 / mês</span>
@@ -96,12 +96,15 @@
 								<p>Benefícios</p>
 								<p>Benefícios</p>
 								<div class="d-grid gap-2">
-									<button
-										type="button"
+									<a
+										href="https://donate.wildnet.org/?fund=Penguin&ms=web_wnt_GPS_Support_btn&utm_source=website&utm_medium=button&utm_campaign=web-gps"
+										target="_blank"
+										rel="noopener noreferrer"
+										role="button"
 										class="btn btn-lg btn-outline-dark"
+										>Doar</a
 									>
-										Doar
-									</button>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -109,9 +112,8 @@
 
 					<div class="pricing-column col-lg-4 col-md-6">
 						<div class="card">
-							<div class="card-header">
-								<h3>Pinguim de Blusa</h3>
-							</div>
+							<img src="../img/1.jpg" alt="pinguim de terno" class="card-img-top">
+
 							<div class="card-body">
 								<span class="card-span">R$</span>
 								<span class="price-text">29,99 / mês</span>
@@ -119,12 +121,14 @@
 								<p>Benefícios</p>
 								<p>Benefícios</p>
 								<div class="d-grid gap-2">
-									<button
-										type="button"
+									<a
+										href="https://donate.wildnet.org/?fund=Penguin&ms=web_wnt_GPS_Support_btn&utm_source=website&utm_medium=button&utm_campaign=web-gps"
+										target="_blank"
+										rel="noopener noreferrer"
+										role="button"
 										class="btn btn-lg btn-dark"
+										>Doar</a
 									>
-										Doar
-									</button>
 								</div>
 							</div>
 						</div>
@@ -132,9 +136,8 @@
 
 					<div class="pricing-column col-lg-4">
 						<div class="card">
-							<div class="card-header">
-								<h3>Pinguim de terno</h3>
-							</div>
+
+							<img src="../img/tuxedo-penguin.jpg" alt="pinguim de terno" class="card-img-top">
 							<div class="card-body">
 								<span class="card-span">R$</span>
 								<span class="price-text">49,99 / mês</span>
@@ -142,12 +145,14 @@
 								<p>Benefícios</p>
 								<p>Benefícios</p>
 								<div class="d-grid gap-2">
-									<button
-										type="button"
+									<a
+										href="https://donate.wildnet.org/?fund=Penguin&ms=web_wnt_GPS_Support_btn&utm_source=website&utm_medium=button&utm_campaign=web-gps"
+										target="_blank"
+										rel="noopener noreferrer"
+										role="button"
 										class="btn btn-lg btn-dark"
+										>Doar</a
 									>
-										Doar
-									</button>
 								</div>
 							</div>
 						</div>
@@ -190,7 +195,6 @@
 				</li>
 			</ul>
 		</footer>
-		<script src="./index.js"></script>
-		<script src="./script.js"></script>
+		<script src="../index.js"></script>
 	</body>
 </html>
