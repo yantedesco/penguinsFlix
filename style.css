@@ -35,6 +35,21 @@ body {
 	overflow: hidden;
 }
 
+.video-destaque {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	width: 100%;
+	max-height: calc(100% - 1px);
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	object-fit: cover;
+}
+
+.responsive-img {
+	display: none;
+}
+
 .main-movie .title {
 	font-weight: 600;
 	font-size: 3.12em;
@@ -229,11 +244,23 @@ body {
 	cursor: pointer;
 }
 
+@media screen and (max-width: 1220px) {
+	#video {
+		display: none;
+	}
+
+	.responsive-img {
+		display: block;
+		left: 0;
+		height: max-content;
+		width: 100%;
+	}
+}
+
 /* ---- ----- ----- Media Queries ----- ----- ----- */
 @media screen and (max-width: 800px) {
 	header .logotipo {
 		margin-bottom: 10px;
-		font-size: 30px;
 	}
 
 	header .container-destaque {
@@ -247,6 +274,7 @@ body {
 
 	.main-movie .description {
 		max-width: 100%;
+		font-size: 8em;
 	}
 
 	.recommended-movies .container-carrousel {

@@ -53,7 +53,7 @@ filmes.forEach((filme) => {
 		setTimeout(() => {
 			filmes.forEach((filme) => filme.classList.remove("hover"));
 			elemento.classList.add("hover");
-		}, 300);
+		}, 50);
 	});
 });
 
