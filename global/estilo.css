@@ -4,7 +4,7 @@
 }
 
 :root {
-	--clr-dark: #212529;
+	--clr-dark: #0d0d0d;
 	--clr-gradient: linear-gradient(to right, #5bff3e, #2ce84a, #30ff8c);
 	--clr-accent: #5bff3e;
 	--clr-light: white;
@@ -16,6 +16,24 @@ html {
 
 body {
 	background-color: var(--clr-dark);
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background: var(--clr-dark);
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--clr-accent);
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::selection {
+	background: var(--clr-accent);
+	color: var(--clr-dark);
 }
 
 /*        Navbar        */
@@ -38,7 +56,6 @@ body {
 
 .navbar .content {
 	display: flex;
-	flex-wrap: wrap;
 	box-sizing: border-box;
 	width: 85%;
 	height: 100%;

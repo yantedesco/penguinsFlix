@@ -473,4 +473,16 @@ body {
 		gap: 30px;
 		max-width: 85%;
 	}
+
+	.icone {
+		display: none;
+	}
+
+	.menu-list {
+		display: none;
+	}
+
+	.navbar .content {
+		justify-content: space-around;
+	}
 }
