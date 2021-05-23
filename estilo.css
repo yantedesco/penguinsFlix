@@ -57,7 +57,7 @@ body {
 
 .navbar .menu-list {
 	list-style: none;
-	line-height: 2.5;
+	line-height: 4;
 	margin-right: auto;
 }
 
@@ -197,4 +197,10 @@ input[type="search"]:focus {
 	background: url(./img/lupin.png) no-repeat 5px center;
 	border-color: var(--clr-accent);
 	box-shadow: 0 0 5px var(--clr-accent);
+}
+
+@media screen and (max-width: 800px) {
+	.logo img {
+		margin-right: 0;
+	}
 }
