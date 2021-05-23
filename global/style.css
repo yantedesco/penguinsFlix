@@ -111,8 +111,7 @@ body {
 	transition: 0.3s ease all;
 	font-size: 1.12em;
 	box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.3);
-	font-weight:bold;
-
+	font-weight: bold;
 }
 .main-movie .button2 {
 	background: rgba(128, 128, 128, 0.6);
@@ -125,7 +124,7 @@ body {
 	transition: 0.3s ease all;
 	font-size: 1.12em;
 	box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.3);
-	font-weight:bold;
+	font-weight: bold;
 }
 
 .main-movie .button2:hover {
@@ -392,6 +391,19 @@ body {
 		max-width: 100%;
 	}
 }
+@media screen and (max-width: 873px) {
+	.icone {
+		display: none;
+	}
+
+	.menu-list {
+		display: none;
+	}
+
+	.navbar .content {
+		justify-content: space-between;
+	}
+}
 
 @media screen and (max-width: 800px) {
 	.main-movie {
@@ -472,17 +484,5 @@ body {
 		grid-template-columns: repeat(1, 1fr);
 		gap: 30px;
 		max-width: 85%;
-	}
-
-	.icone {
-		display: none;
-	}
-
-	.menu-list {
-		display: none;
-	}
-
-	.navbar .content {
-		justify-content: space-around;
 	}
 }
