@@ -152,7 +152,7 @@ body {
 /* ---- ----- ----- Container Principal e Seta ----- ----- ----- */
 .recommended-movies {
 	width: 85%;
-	margin: 100px auto;
+	margin: 70px auto;
 }
 
 .recommended-movies .container-main {
@@ -227,7 +227,7 @@ body {
 .recommended-movies .container-carrousel .carrousel .movie img {
 	width: 99%;
 	vertical-align: top;
-	height: 426px;
+	height: auto;
 }
 
 /* The Modal (background) */
@@ -292,6 +292,13 @@ body {
 		display: none;
 	}
 
+	.main-movie {
+		background-color: rgba(0, 0, 0, 0.548);
+		background-size: cover;
+		background-blend-mode: multiply;
+		z-index: 1;
+	}
+
 	.main-movie .container {
 		margin: auto;
 		overflow: hidden;
@@ -306,7 +313,7 @@ body {
 	.responsive-img img {
 		position: absolute;
 		width: 100%;
-		height: 62.1%;
+		height: 70%;
 		width: 100%;
 		object-fit: cover;
 		z-index: -1;
@@ -332,6 +339,18 @@ body {
 	.main-movie .button i {
 		margin-left: 0;
 	}
+
+	.recommended-movies .container-carrousel .carrousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.recommended-movies .indicators,
+	.recommended-movies .left-arrow,
+	.recommended-movies .right-arrow {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1070px) {
@@ -354,21 +373,46 @@ body {
 @media screen and (max-width: 800px) {
 	.main-movie {
 		font-size: 14px;
+		height: 67.5vh;
+	}
+
+	.responsive-img img {
+		height: 67.5%;
 	}
 
 	.heading-text-button {
-		margin-top: 15em;
-		align-items: center;
-		justify-content: center;
+		margin-top: 28em;
+		margin-left: 2em;
+		place-items: center;
+		place-content: center;
+	}
+
+	.recommended-movies {
+		margin-top: 0;
 	}
 
 	.recommended-movies .container-carrousel {
 		overflow: visible;
 	}
 
+	.container-title-controls {
+		place-content: center;
+		margin-top: 5em;
+		margin-bottom: 2em;
+	}
+
+	.container-title-controls h3 {
+		font-size: 2em;
+		text-align: center;
+	}
+
+	.recommended-movies .container-carrousel .carrousel .movie img {
+		height: auto;
+	}
+
 	.recommended-movies .container-carrousel .carrousel {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
 	}
 
@@ -376,5 +420,34 @@ body {
 	.recommended-movies .left-arrow,
 	.recommended-movies .right-arrow {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.heading-text-button {
+		margin-top: 28em;
+		margin-left: 2em;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.heading-text {
+		text-align: center;
+	}
+
+	.recommended-movies {
+		display: grid;
+	}
+
+	.container-carrousel {
+		display: inherit;
+		place-content: center;
+	}
+
+	.recommended-movies .container-carrousel .carrousel {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 30px;
+		max-width: 85%;
 	}
 }

@@ -30,6 +30,7 @@ setaEsquerda.addEventListener("click", () => {
 const numberPages = Math.ceil(filmes.length / 5);
 for (let i = 0; i < numberPages; i++) {
 	const indicator = document.createElement("button");
+	window.width;
 
 	if (i === 0) {
 		indicator.classList.add("active");
