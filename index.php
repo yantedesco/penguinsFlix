@@ -1,7 +1,6 @@
-+
 <?php
 
-include_once("index.html");
+include_once("./pages/login/login.html");
 
 ?>
 
