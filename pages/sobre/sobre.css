@@ -1,5 +1,5 @@
 .main-movie {
-	height: 100vh;
+	height: 110vh;
 	font-size: 16px;
 	min-height: 40.62em;
 	color: #fff;
@@ -64,7 +64,7 @@
 
 }
 .valores{
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 h1 {
@@ -82,8 +82,13 @@ h1 {
   margin-right: 80px;
 }
 
+#rodape {
+  text-align: center; 
+  margin-right: 30px;
+}
+
 body{
-      background: black;
+      background: #0d0d0d;;
     }
     
     .historia{

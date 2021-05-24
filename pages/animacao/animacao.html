@@ -21,6 +21,9 @@
 	<body>
 		<nav class="navbar">
 			<div class="content">
+				<div class="h-icon menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
 				<div class="logo">
 					<a href="/pages/home/index.html">
 						<img
@@ -31,14 +34,20 @@
 					</a>
 				</div>
 				<ul class="menu-list">
+					<div class="h-icon cancel-btn">
+						<i class="fas fa-times"></i>
+					</div>
 					<li class="list-each">
-						<a href="/pages/home/index.html" target="_self" class="nav-link"
+						<a
+							href="/pages/home/index.html"
+							target="_self"
+							class="nav-link"
 							>Início</a
 						>
 					</li>
 					<li class="list-each">
 						<a
-							href="/pages/animacao/animacao.html"
+							href="./animacao.html"
 							target="_self"
 							id="active-page"
 							class="nav-link"
@@ -62,11 +71,14 @@
 						>
 					</li>
 				</ul>
+
 				<div class="icon">
 					<form id="busca">
 						<input type="search" />
 						<a href="/pages/doacao/doacao.html">
-							<i class="icone fas fa-hand-holding-heart fa-2x"></i>
+							<i
+								class="icone fas fa-hand-holding-heart fa-2x"
+							></i>
 						</a>
 						<a href="/pages/login/login.html">
 							<i class="icone fas fa-user fa-2x fa-2x"></i>
