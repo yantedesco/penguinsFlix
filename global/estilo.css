@@ -65,6 +65,10 @@ body {
 	color: var(--clr-accent);
 }
 
+.menu-list .doacao {
+	display: none;
+}
+
 .menu-list .cancel-btn {
 	position: absolute;
 	right: 30px;
@@ -258,6 +262,14 @@ input[type="search"]:focus {
 		display: none;
 	}
 
+	.menu-list .doacao {
+		display: block;
+	}
+
+	.menu-list .doacao a {
+		color: var(--clr-accent);
+	}
+
 	.navbar .menu-list {
 		position: absolute;
 		height: 100vh;
@@ -271,6 +283,14 @@ input[type="search"]:focus {
 		background: var(--clr-dark);
 		transition: all 0.3s ease;
 		display: inline-flex;
+	}
+
+	.navbar .menu-list li a:hover {
+		color: var(--clr-accent);
+	}
+
+	#active-page {
+		font-size: 1.5em;
 	}
 
 	.navbar.show .menu-list {
