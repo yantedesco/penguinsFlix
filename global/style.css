@@ -407,8 +407,13 @@ body {
 
 @media screen and (max-width: 800px) {
 	.main-movie {
-		font-size: 14px;
+		font-size: 12px;
 		height: 67.5vh;
+	}
+
+	.main-movie .container {
+		display: flex;
+		place-content: center;
 	}
 
 	.responsive-img img {
@@ -416,10 +421,9 @@ body {
 	}
 
 	.heading-text-button {
+		margin-left: 0;
 		margin-top: 28em;
-		margin-left: 2em;
 		place-items: center;
-		place-content: center;
 	}
 
 	.recommended-movies {
@@ -461,7 +465,6 @@ body {
 @media screen and (max-width: 550px) {
 	.heading-text-button {
 		margin-top: 28em;
-		margin-left: 2em;
 		align-items: center;
 		justify-content: center;
 	}

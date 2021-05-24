@@ -5,17 +5,20 @@ const navbar = document.querySelector(".navbar");
 const menuBtn = document.querySelector(".menu-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
 const navLinks = document.querySelectorAll(".nav-link");
+const doacao = document.querySelector(".doacao");
 
 menuBtn.onclick = () => {
 	navbar.classList.add("show");
 	menuBtn.classList.add("hide");
 	body.classList.add("disabled");
+	doacao.classList.add("show");
 };
 
 cancelBtn.onclick = () => {
 	body.classList.remove("disabled");
 	navbar.classList.remove("show");
 	menuBtn.classList.remove("hide");
+	doacao.classList.remove("show");
 };
 
 window.onscroll = () => {
@@ -29,5 +32,6 @@ navLinks.forEach((link) => {
 		body.classList.remove("disabled");
 		navbar.classList.remove("show");
 		menuBtn.classList.remove("hide");
+		doacao.classList.remove("show");
 	});
 });
