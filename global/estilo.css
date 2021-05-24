@@ -178,6 +178,17 @@ main img {
 
 .fab {
 	padding: 0.5em;
+	font-size: 1.7em;
+}
+
+.footer .far {
+	padding: 0.5em;
+	font-size: 1.7em;
+}
+
+.footer .fas {
+	padding: 0.5em;	
+	font-size: 1.7em;
 }
 
 .social-list {
