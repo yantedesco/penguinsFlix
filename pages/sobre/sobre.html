@@ -11,61 +11,160 @@
 			type="image/x-icon"
 		/>
 		<title>Pinguins Streaming</title>
+		<script
+			src="https://kit.fontawesome.com/8bb6b0374f.js"
+			crossorigin="anonymous"
+		></script>
+
+		<link rel="stylesheet" href="estilo.css" />
+		<link rel="stylesheet" href="sobre.css" />
 	</head>
 
 	<body>
-		<a href="/index.html">
-			<img src="./logo.png" alt="Pinguins logo" />
-		</a>
-		<nav class="navbar1">
-			<a class="gradient" href="./index.html" target="_self">HOME</a>
-			<a class="gradient" href="./filmes.html" target="_self">FILMES</a>
-			<a class="gradient" href="./series.html" target="_self">SÉRIES</a>
-			<a class="gradient" href="./sobre.html" target="_self">SOBRE</a>
-		</nav>
-		<p class="sobre">Grupo 06 <br /></p>
-		<ul class="sobre">
-			<li>Brayan Cataldo</li>
-			<li>Igor Stumpf</li>
-			<li>Lucas Azevedo</li>
-			<li>Marco Bet</li>
-			<li>Ricardo Araújo</li>
-			<li>Yan Tedesco</li>
-		</ul>
-		<br />
-		<a href="mailto:pinguins@contato.com" class="sobre">Nosso e-mail</a>
-		&nbsp;
-		<a href="tel:+552422334455" class="sobre">Nosso telefone</a>
-		<br />
-		<br />
-		<br />
+			<nav class="navbar">
+				<div class="content">
+					<div class="logo">
+						<a href="/index.html">
+							<img
+								src="./img/LogoSVG.svg"
+								alt="Pinguins logo"
+								class="svg"
+							/>
+						</a>
+					</div>
+					<ul class="menu-list">
+						<li class="list-each">
+							<a
+								href="./index.html"
+								target="_self"
+								id="active-page"
+								class="nav-link"
+								>Início</a
+							>
+						</li>
+						<li class="list-each">
+							<a href="./filmes.html" target="_self" class="nav-link"
+								>Filmes</a
+							>
+						</li>
+						<li class="list-each">
+							<a href="./series.html" target="_self" class="nav-link"
+								>Séries</a
+							>
+						</li>
+						<li class="list-each">
+							<a href="./sobre.html" target="_self" class="nav-link"
+								>Sobre</a
+							>
+						</li>
+					</ul>
+					<div class="icon">
+						<form id="busca">
+							<input type="search" />
+							<a href="./doacao/doacao.html">
+								<i class="fas fa-hand-holding-heart fa-2x"></i>
+							</a>
+							<a href="./register.html">
+								<i class="fas fa-user fa-2x fa-2x"></i>
+							</a>
+						</form>
+					</div>
+				</div>
+			</nav>
+			<div class="main-movie">
+				<div class="container">
 
-		<nav>
-			<p>
-				<a
-					href="https://www.facebook.com/PinguinsDeMadagascarFilme"
-					target="_blank"
-					><img
-						src="http://simpleicon.com/wp-content/uploads/facebook-2.png"
-						alt="Nosso Facebook"
-				/></a>
-				<a
-					href="https://www.instagram.com/pinguins_lovers/"
-					target="_blank"
-					><img
-						src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-3-512.png"
-						alt="Nosso Instagram"
-				/></a>
-				<a href="https://twitter.com/pinguinsmoveis" target="_blank"
-					><img
-						src="https://seeklogo.com/images/T/twitter-icon-circle-black-logo-35827D553B-seeklogo.com.png"
-						alt="Nosso Twitter"
-				/></a>
+					<p class="description">
+						<button role="button" class="button">
+							<i class="fas fa-info-circle"></i> Conheça-nos!
+						</button>
+					</p>
+					<div class="historia">
+						<ul class="timeline">
+							<h1>2021</h1>
+							<li>1º Dia: OBA!!! Vai começar a Residência do Serratec<br><br>8º Dia: Será que vai ficar mais difícil?</li>
+							<li>22º Dia: O que tá rolando aqui? Não to entendendo nada... <br><br>37º dia: 8 horas de sono? Esquece...</li>
+							<li>51º Dia: EU SÓ QUERO DORMIR E APRENDER!!!<br><br>79º Dia: Ops, não é que agora faz sentido </li>
+							<li>93º Dia: Por favor, não acaba...<br><br>110º Dia: CONTRATADOS!</li>					
+						</ul>
+						<div>
+							<img class="Conquistas" id="im1" src="./img/tuxedo-penguin.jpg" alt="">
+							<img class="Conquistas" id="im2" src="./img/tuxedo-penguin.jpg" alt="">
+							<img class="Conquistas" id="im3" src="./img/tuxedo-penguin.jpg" alt="">
+							<img class="Conquistas" id="im4" src="./img/tuxedo-penguin.jpg" alt="">
+						</div>
+						<div class="valores">
+							<ul>
+								<h1>Nossos valores</h1><br><br><br>
+								<li>1 - No inverno, ser a sua plataforma de filmes para o friozinho</li><br>
+								<li>2 - No verão, nosso gelo vai aliviar seu calor</li><br>
+								<li>3 - Conseguir uma vaguinha ao final da residência</li><br>
+							</ul>
+						</div>
+						<div style="text-align: center; margin-right: 35px;">
+							<h2>Faça parte do nosso time</h2>
+							<p>(Vagas abertas apenas se o professor permitir)</p>
+						</div>
+						
+				</div>
+				</div>
+			</div>
 
-				Terms of use Privacy Policy
-			</p>
-
-			<p>© 2021 Pinguins Streaming</p>
-		</nav>
-	</body>
-</html>
+			<footer class="footer">
+				<ul class="social-list">
+					<li>
+						<a
+							class="icon-footer"
+							href="mailto:pinguins@contato.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<i class="far fa-envelope fa-2x"></i
+						></a>
+					</li>
+					<li>
+						<a
+							class="icon-footer"
+							href="http://facebook.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<i class="fab fa-facebook fa-2x"></i
+						></a>
+					</li>
+					<li>
+						<a
+							class="icon-footer"
+							href="http://twitter.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<i class="fab fa-twitter fa-2x"></i
+						></a>
+					</li>
+					<li>
+						<a
+							class="icon-footer"
+							href="http://instagram.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<i class="fab fa-instagram fa-2x"></i
+						></a>
+					</li>
+					<li>
+						<a
+							class="icon-footer"
+							href="tel:+552422334455"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<i class="fas fa-phone-square fa-2x"></i
+						></a>
+					</li>
+				</ul>
+			</footer>
+			<script src="./index.js"></script>
+			<script src="./script.js"></script>
+		</body>
+	</html>

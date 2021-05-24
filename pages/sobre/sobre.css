@@ -1,0 +1,170 @@
+.main-movie {
+	height: 100vh;
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: url(./img/1_auto.jpg);
+	background-position: center center;
+	background-size: cover;
+  margin-bottom: 1200px;
+	display: flex;
+	align-items: end;
+}
+
+.main-movie .container {
+	margin: auto;
+	margin-left: 0%;
+	margin-bottom: 15em;
+	overflow: hidden;
+
+}
+
+.title {
+  font-size: 2em;
+  margin-top: 700px;
+  margin-left: 100px;
+}
+
+.description {
+  font-size: 1.1em;
+  margin-bottom: 200px;
+  margin-left: 100px;
+  margin-top: 800px;
+}
+
+.main-movie .button {
+	background: rgba(0, 0, 0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: 0.3s ease all;
+	font-size: 1.12em;
+}
+
+.main-movie .button:hover {
+	background: #fff;
+	color: #4caf50;
+}
+
+.main-movie .button i {
+	margin-right: 1.25em;
+}
+
+.Conquistas {
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  margin-left: 120px;
+  margin-right: 60px;
+
+}
+.valores{
+  margin-bottom: 200px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+
+.valores li{
+  list-style: none;
+  text-align: center;
+  font-size: 2em;
+  margin-top:0px;
+  margin-right: 80px;
+}
+
+body{
+      background: black;
+    }
+    
+    .historia{
+      width: 2000px;
+      margin: 50px auto;
+    }
+    
+    .timeline{
+      counter-reset: mes 2;
+      position: relative;
+    }
+    
+    .timeline li{
+      list-style: none;
+      float: left;
+      width: 25%;
+      position: relative;
+      text-align: center;
+      font-family: 'Helvetica';
+    }
+    
+    ul:nth-child(1){
+      color: #4caf50;
+    }
+    
+    .timeline li:before{
+      counter-increment: mes;
+      content: "Mês "counter(mes);
+      width: 50px;
+      height: 50px;
+      border: 3px solid #4caf50;
+      border-radius: 50%;
+      display: block;
+      text-align: center;
+      line-height: 50px;
+      margin: 0 auto 10px auto;
+      background: black;
+      color: white;
+      transition: all ease-in-out .3s;
+      cursor: pointer;
+    }
+    
+    .timeline li:after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: grey;
+      top: 25px;
+      left: -50%;
+      z-index: -999;
+      transition: all ease-in-out .3s;
+    }
+    
+    .timeline li:first-child:after{
+      content: none;
+    }
+    .timeline li.active{
+      color: #555555;
+    }
+    .timeline li.active:before{
+      background: #4caf50;
+      color: #F1F1F1;
+    }
+    
+    .timeline li.active + li:after{
+      background: #4caf50;
+    }
+
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .container-destaque {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.main-movie {
+		font-size: 14px;
+	}
+}
