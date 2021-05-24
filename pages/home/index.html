@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="/global/estilo.css" />
 	</head>
 
-	<body>
+	<body onload="fetchData()">
 		<nav class="navbar">
 			<div class="content">
 				<div class="h-icon menu-btn">
@@ -83,7 +83,7 @@
 
 				<div class="icon">
 					<form id="busca">
-						<input type="search" />
+						<input id="pesquisa" onkeyup="filtrarFilme()" />
 						<a href="/pages/doacao/doacao.html">
 							<i
 								class="icone fas fa-hand-holding-heart fa-2x"
@@ -155,102 +155,7 @@
 				</button>
 
 				<div class="container-carrousel">
-					<div class="carrousel">
-						<div class="movie">
-							<a
-								href="https://www.youtube.com/watch?v=xYR3mY4CLOM&ab_channel=ChangingSeasTVChangingSeasTV"
-								target="_blank"
-								><img
-									src="/assets/img/documentario6.jpg"
-									alt=""
-							/></a>
-						</div>
-
-						<div class="movie">
-							<a
-								href="https://www.youtube.com/watch?v=gKWNUyTGqss&ab_channel=ClevverTVClevverTV"
-								target="_blank"
-								><img src="/assets/img/3.jpg" alt=""
-							/></a>
-						</div>
-						<div class="movie">
-							<a
-								href="https://www.youtube.com/watch?v=13jOLKuPrLY&ab_channel=FoxFamilyEntertainmentBrasilFoxFamilyEntertainmentBrasil"
-								target="_blank"
-								><img src="/assets/img/5.jpg" alt=""
-							/></a>
-						</div>
-						<div class="movie">
-							<a
-								href="https://www.youtube.com/watch?v=uFMUfJT63tM&ab_channel=CartoonNetworkBrasilCartoonNetworkBrasil"
-								target="_blank"
-								><img src="/assets/img/6.jpg" alt=""
-							/></a>
-						</div>
-						<div class="movie">
-							<a
-								href="https://www.youtube.com/watch?v=Qte3_DXGV0o&ab_channel=AlltheAnimeAlltheAnime"
-								target="_blank"
-								><img src="/assets/img/7.jpg" alt=""
-							/></a>
-						</div>
-						<div class="movie">
-							<a
-								href="https://www.youtube.com/watch?v=hjjcJsr9_B4&ab_channel=SonyPicturesBrasilSonyPicturesBrasil"
-								target="_blank"
-								><img src="/assets/img/8.jpg" alt=""
-							/></a>
-						</div>
-						<div class="movie">
-							<a
-								href="https://www.youtube.com/watch?v=mBVj_LKG2HE&ab_channel=TeleFilms-ConstruindooseucinemaTeleFilms-Construindooseucinema"
-								target="_blank"
-								><img src="/assets/img/9.jpg" alt=""
-							/></a>
-						</div>
-						<div class="movie">
-							<a
-								href="https://www.youtube.com/watch?v=lXfPVBmDY60&ab_channel=MovieclipsClassicTrailersMovieclipsClassicTrailersVerificado"
-								target="_blank"
-								><img src="/assets/img/4.jpg" alt=""
-							/></a>
-						</div>
-						<div class="movie">
-							<a
-								href="https://www.youtube.com/watch?v=hFUC5adf8FE"
-								target="_blank"
-								><img src="/assets/img/2.jpg" alt=""
-							/></a>
-						</div>
-						<div class="movie">
-							<a
-								href="https://www.youtube.com/watch?v=L7tWNwhSocE&ab_channel=MovieclipsMovieclips"
-								target="_blank"
-								><img
-									src="/assets/img/documentario1.jpg"
-									alt=""
-							/></a>
-						</div>
-
-						<div class="movie">
-							<a
-								href="https://www.youtube.com/watch?v=SMsA07Yej7E&ab_channel=Europa-FilmesEuropa-Filmes"
-								target="_blank"
-								><img
-									src="/assets/img/documentario2.jpg"
-									alt=""
-							/></a>
-						</div>
-						<div class="movie">
-							<a
-								href="https://www.youtube.com/watch?v=VubxHFy7ocE&ab_channel=WaltDisneyStudiosWaltDisneyStudios"
-								target="_blank"
-								><img
-									src="/assets/img/documentario3.jpg"
-									alt=""
-							/></a>
-						</div>
-					</div>
+					<div class="carrousel"></div>
 				</div>
 
 				<button role="button" id="right-arrow" class="right-arrow">
@@ -293,6 +198,7 @@
 				</li>
 			</ul>
 		</footer>
+		<script src="../../mock.js"></script>
 		<script src="/global/index.js"></script>
 		<script src="/global/script.js"></script>
 	</body>

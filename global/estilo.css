@@ -103,7 +103,7 @@ body {
 
 .navbar .menu-list {
 	list-style: none;
-	line-height: 4;
+	line-height: 1.5;
 	margin-right: auto;
 }
 
@@ -214,18 +214,18 @@ main img {
 	color: var(--clr-accent);
 }
 
-#busca input[type="search"] {
+#busca input {
 	width: 15px;
 	padding-left: 10px;
 	color: transparent;
 	cursor: pointer;
 }
 
-#busca input[type="search"]:hover {
+#busca input:hover {
 	background-size: 1.56em;
 }
 
-#busca input[type="search"]:focus {
+#busca input:focus {
 	width: 130px;
 	padding-left: 32px;
 	color: var(--clr-accent);
@@ -238,12 +238,12 @@ input {
 	outline: none;
 }
 
-input[type="search"] {
+input {
 	box-sizing: content-box;
 	font-size: 80%;
 }
 
-input[type="search"] {
+input {
 	background: #212529;
 	background: url(/assets/img/lupin.png) no-repeat 5px center;
 	background-size: 65%;
@@ -252,7 +252,7 @@ input[type="search"] {
 	border-radius: 0.5em;
 	transition: all 0.5s;
 }
-input[type="search"]:focus {
+input:focus {
 	width: 130px;
 	background: #212529;
 	background: url(/assets/img/lupin.png) no-repeat 5px center;

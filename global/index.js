@@ -35,3 +35,28 @@ navLinks.forEach((link) => {
 		doacao.classList.remove("show");
 	});
 });
+
+function filtrarFilme() {
+	event.preventDefault();
+	var moviesFilter = movies.filter((filme) =>
+		filme.nome
+			.toLowerCase()
+			.includes(document.getElementById("pesquisa").value.toLowerCase())
+	);
+	document.querySelector(".carrousel").innerHTML = moviesFilter.map(
+		(movie) => {
+			return `
+      <div class="movie">
+      <a
+        href="${movie.link}"
+        target="_blank"
+        ><img
+          src="${movie.imagem}"
+          alt="${movie.nome}"
+      /></a>
+      </div>
+  `;
+		}
+	);
+	console.log(moviesFilter);
+}

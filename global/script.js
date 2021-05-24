@@ -1,5 +1,4 @@
 const fila = document.querySelector(".container-carrousel");
-const filmes = document.querySelectorAll(".movie");
 
 const setaEsquerda = document.getElementById("left-arrow");
 const setaDireita = document.getElementById("right-arrow");
@@ -9,7 +8,7 @@ setaDireita.addEventListener("click", () => {
 	fila.scrollLeft += fila.offsetWidth;
 
 	const IndicatorActive = document.querySelector(".indicators .active");
-	if (IndicatorActive.nextSibling) {
+	if (IndicatorActive?.nextSibling) {
 		IndicatorActive.nextSibling.classList.add("active");
 		IndicatorActive.classList.remove("active");
 	}
@@ -20,14 +19,14 @@ setaEsquerda.addEventListener("click", () => {
 	fila.scrollLeft -= fila.offsetWidth;
 
 	const IndicatorActive = document.querySelector(".indicators .active");
-	if (IndicatorActive.previousSibling) {
+	if (IndicatorActive?.previousSibling) {
 		IndicatorActive.previousSibling.classList.add("active");
 		IndicatorActive.classList.remove("active");
 	}
 });
 
 // ? ----- ----- Paginacão ----- -----
-const numberPages = Math.ceil(filmes.length / 5);
+const numberPages = Math.ceil(movies.length / 5);
 for (let i = 0; i < numberPages; i++) {
 	const indicator = document.createElement("button");
 	window.width;
