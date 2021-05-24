@@ -69,6 +69,10 @@ body {
 	display: none;
 }
 
+.menu-list .doacao a {
+	color: var(--clr-accent);
+}
+
 .menu-list .cancel-btn {
 	position: absolute;
 	right: 30px;
@@ -257,6 +261,18 @@ input[type="search"]:focus {
 }
 
 @media screen and (max-width: 868px) {
+	.icone {
+		display: none;
+	}
+
+	.menu-list {
+		display: none;
+	}
+
+	.navbar .content {
+		justify-content: space-between;
+	}
+
 	.navbar .content {
 		align-items: center;
 	}
@@ -278,11 +294,11 @@ input[type="search"]:focus {
 	}
 
 	.menu-list .doacao.show {
-		display: inline-block;
+		display: block;
 	}
 
-	.menu-list .doacao a {
-		color: var(--clr-accent);
+	.content .menu-list .doacao a {
+		color: var(--clr-accent) !important;
 	}
 
 	.navbar .menu-list {
@@ -290,7 +306,7 @@ input[type="search"]:focus {
 		height: 100vh;
 		width: 100%;
 		max-width: 400px;
-		left: -100%;
+		left: -120%;
 		top: 0px;
 		display: block;
 		padding: 20px 0;
