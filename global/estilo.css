@@ -41,7 +41,7 @@ body {
 	position: fixed;
 	background: linear-gradient(to top, transparent 2%, #212529 135%);
 	height: 4.5em;
-	margin-bottom: 20px;
+	padding: 0;
 	display: block;
 	width: 100%;
 	transition: all 0.3s ease-in-out;
@@ -103,6 +103,10 @@ body {
 	margin-right: auto;
 }
 
+.navbar .line-h {
+	line-height: 3.1;
+}
+
 .list-each {
 	display: inline-block;
 }
@@ -113,7 +117,7 @@ body {
 	padding-right: 30px;
 	text-decoration: none;
 	font-size: 1.2em;
-	color: white;
+	color: white !important;
 }
 
 #active-page {
