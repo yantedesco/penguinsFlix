@@ -103,7 +103,7 @@ body {
 
 .navbar .menu-list {
 	list-style: none;
-	line-height: 1.5;
+	line-height: 3.5;
 	margin-right: auto;
 }
 
@@ -295,6 +295,7 @@ input:focus {
 
 	.menu-list .doacao.show {
 		display: block;
+		line-height: 1.5;
 	}
 
 	.content .menu-list .doacao a {
@@ -327,6 +328,7 @@ input:focus {
 	.navbar.show .menu-list {
 		left: 0%;
 		flex-direction: column;
+		line-height: 1.5;
 	}
 
 	.navbar .menu-list li {
