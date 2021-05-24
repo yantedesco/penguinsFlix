@@ -372,7 +372,7 @@ body {
 
 	.recommended-movies .container-carrousel .carrousel {
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		max-width: 85%;
 		gap: 20px;
 	}
@@ -456,7 +456,7 @@ body {
 
 	.recommended-movies .container-carrousel .carrousel {
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		max-width: 85%;
 
 		gap: 20px;
